@@ -11,3 +11,14 @@ spa react
 - 5. css module 按需加载
 - 6. post css
 - 7. 图片
+- ts/tsx
+
+
+### todo list
+- eslint
+- pretter
+- CodeSplitting 
+- git commit hook
+- dev / build /
+- react-router
+- react context

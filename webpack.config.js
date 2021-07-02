@@ -14,6 +14,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.tsx?$/, 
+        exclude: /node_modules/,
+        use: {
+          loader: "ts-loader",
+        } 
+      },
+      {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
@@ -83,9 +90,10 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@src': path.resolve(__dirname, './src/')
+      '@src': path.resolve(__dirname, './src/'),
+      '@/': path.resolve(__dirname, './')
     },
-    extensions: ['.js', '.jsx', '.json']
+    extensions: ['.ts','.tsx','.js', '.jsx', '.json']
   },
   optimization: {
     usedExports: true,
